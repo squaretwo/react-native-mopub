@@ -1,4 +1,4 @@
-#import "RCTComponent.h"
+#import <React/RCTComponent.h>
 
 @class RCTEventDispatcher;
 

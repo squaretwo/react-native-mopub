@@ -1,6 +1,6 @@
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 #import "MPInterstitialAdController.h"
-#import "RCTEventEmitter.h"
+#import <React/RCTEventEmitter.h>
 
 @interface RNMoPubInterstitial : RCTEventEmitter <RCTBridgeModule, MPInterstitialAdControllerDelegate>
 

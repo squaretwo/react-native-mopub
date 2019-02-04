@@ -20,11 +20,6 @@ public class RNMoPubPackage implements ReactPackage {
     }
 
     @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
-    }
-
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         ArrayList<ViewManager> viewManagers = new ArrayList<>();
         viewManagers.add(new MoPubBannerManager());

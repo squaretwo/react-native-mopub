@@ -21,18 +21,11 @@ RCT_EXPORT_MODULE();
     ];
 }
 
-
 RCT_EXPORT_METHOD(initialize: (nonnull NSString *) adUnitId) {
     // Instantiate the interstitial using the class convenience method.
     self.interstitial = [MPInterstitialAdController
         interstitialAdControllerForAdUnitId:adUnitId];
     self.interstitial.delegate = self;
-}
-
-RCT_EXPORT_METHOD(setTesting:(BOOL *)testing) {
-    if (self.interstitial != nil) {
-        [self.interstitial setTesting:testing];
-    }
 }
 
 RCT_EXPORT_METHOD(setKeywords:(NSString *)keywords) {
